@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./../../css/bootstrap.css">
+        <link rel="stylesheet" href="./../../css/common.css">
+    </head>
+    <body>
+        <header class="bg-primary">
+            <div class="container">
+              <nav class="navbar navbar-dark bg-primary navbar-expand">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../customer/customers.html">Заказчики</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../object/objects.html">Объекты</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./licenses.html">Лицензиаты <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../equipment/equipment.html">Оборудование</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../document/documents.html">Документы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contract/contracts.html">Договор</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container mt-3">
+                <div class="h3 text-info">Редактирование лицензиата</div>
+                <hr/>
+                <form class="d-flex flex-column"> 
+                    <div class="form-group">
+                      <label for="license_name">Имя лицензиата</label>
+                      <input type="text" class="form-control" id="license_name" placeholder="Введите имя лицензиата..." data-type="string">
+                    </div>
+                    <div class="form-group">
+                        <label for="license_customer">Заказчик</label>
+                        <select class="custom-select" id="license_customer" data-type="list">
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-info mt-2" id="edit_license_btn">Сохранить</button>
+                </form>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="module" src="./js/edit_license.js"></script>
+    </body>
+</html>

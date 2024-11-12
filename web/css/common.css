@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.cont {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+main {
+    flex: 1;
+    margin-top: 56px;
+    overflow-y: auto;
+    padding-top: 20px; 
+}
+
+
+.top {
+    height: calc(100vh - 120px); 
+    display: flex;
+    flex-direction: column;
+}
+
+.top .scrollable-table {
+    flex: 1;
+    overflow-y: auto;
+}

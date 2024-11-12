@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./../../css/bootstrap.css">
+        <link rel="stylesheet" href="./../../css/common.css">
+    </head>
+    <body>
+        <header class="bg-primary">
+            <div class="container">
+              <nav class="navbar navbar-dark bg-primary navbar-expand">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../customer/customers.html">Заказчики</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../object/objects.html">Объекты</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../licenses/licenses.html">Лицензиаты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../equipment/equipment.html">Оборудование</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../document/documents.html">Документы</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contracts.html">Договор <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container mt-3">
+                <div class="h3 text-info">Создание контракта</div>
+                <hr/>
+                <form class="d-flex flex-column"> 
+                    <div class="form-group">
+                      <label for="contract_contract_number">Номер контракта</label>
+                      <input type="text" class="form-control" id="contract_contract_number" placeholder="Введите номер контракта..." data-type="int">
+                    </div>
+                    <div class="form-group">
+                        <label for="contract_customer">Заказчик</label>
+                        <select class="custom-select" id="contract_customer" data-type="list">
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-info mt-2" id="create_contract_btn">Создать</button>
+                </form>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="module" src="./js/create_contract.js"></script>
+    </body>
+</html>

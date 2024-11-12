@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./../../css/bootstrap.css">
+        <link rel="stylesheet" href="./../../css/table_page.css">
+    </head>
+    <body>
+      <header class="bg-primary">
+          <div class="container">
+            <nav class="navbar navbar-dark bg-primary navbar-expand">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../customer/customers.html">Заказчики</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../object/objects.html">Объекты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../licenses/licenses.html">Лицензиаты</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="./equipment.html">Оборудование  <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../document/documents.html">Документы</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../contract/contracts.html">Договор</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+      </header>
+
+      <main>
+        <div class="container mt-3">
+          <div class="table-container">
+            <table class="table table-hover table-bordered scrollable-table" id="equipment_table">
+            </table>
+          </div>
+
+          <a href="./create_equipment.html" class="btn btn-success mt-3" id="create_equipment_btn">Создать оборудование</a>
+        </div>
+      </main>
+
+      <script type="text/javascript" src="/eel.js"></script>
+      <script type="module" src="./js/equipment.js"></script>
+    </body>
+  </html>
